@@ -1,0 +1,4 @@
+include README.rst
+include test/README.rst
+include scripts/README.rst
+include src/bce_covid19/data/*

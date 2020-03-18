@@ -1,0 +1,28 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/BCECovid19
+    docker:
+      - image: circleci/python:3.7
+    environment:
+      PIPENV_VENV_IN_PROJECT: 1
+    steps:
+      - checkout
+      - run:
+          name: 'Install graphviz binaries'
+          command: |
+            sudo apt-get install graphviz
+      - run:
+          name: 'Install dependencies'
+          command: |
+            pip install pipenv
+            pipenv install --dev --deploy
+      - run:
+          name: Run unit tests
+          command: |
+            . .venv/bin/activate
+            python setup.py develop
+            which python
+            which pytest
+            pytest -x --doctest-modules test src
+
