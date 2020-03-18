@@ -1,6 +1,8 @@
 Pipfile.lock linguist-generated=true
 src/bce_covid19/data/* filter=lfs diff=lfs merge=lfs -text
 src/bce_covid19/data/ncbi_entrez_covid_19/* filter=lfs diff=lfs merge=lfs -text
+src/bce_covid19/data/uniprot_coronavirus/* filter=lfs diff=lfs merge=lfs -text
+
 
 
 

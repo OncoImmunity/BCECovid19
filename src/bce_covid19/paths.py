@@ -29,3 +29,16 @@ def get_ncbi_entrez_covid_19_path() -> str:
     """
     return os.path.join(get_data_path(), "ncbi_entrez_covid_19")
 
+
+def get_uniprot_coronavirus_19_path() -> str:
+    """
+    Get path of the uniprot_coronavirus folder
+
+    Returns: path of the directory of the `uniprot_coronavirus` folder as string.
+
+    Example:
+        >>> path = get_ncbi_entrez_covid_19_path()
+        >>> print(path) # doctest: +ELLIPSIS
+        /.../BCECovid19/src/bce_covid19/data/uniprot_coronavirus
+    """
+    return os.path.join(get_data_path(), "uniprot_coronavirus")
