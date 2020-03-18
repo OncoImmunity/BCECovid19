@@ -55,4 +55,9 @@ def pre_proc(data_path: str, file_name, junk_name: str) -> Tuple[int, int, int]:
         aa_per_junk += record_len
         tot_seq_filtered += 1
 
-    return tot_parsed_seq, tot_seq_filtered, junk_id+1
+    # save the last junk:
+    if len(junk_seq) > 0:
+        save_fasta_file(fasta_id=f"{junk_name}_pre_proc_{junk_id}", fasta_rec=junk_seq,
+                        fasta_path=data_path)
+
+    return tot_parsed_seq, tot_seq_filtered, junk_id + 1
