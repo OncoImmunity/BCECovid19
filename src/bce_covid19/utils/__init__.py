@@ -14,6 +14,4 @@ csv_handler.py: saves and loads data form csv files.
 
 fasta.py: functions for fasta files
 
-paths.py: script for paths definition
-
 """

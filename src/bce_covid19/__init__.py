@@ -19,5 +19,10 @@ Data:
 -----
 data: contains pre- and post-processing data
 
+Scripts:
+--------
+paths.py: script for paths definition
+
+
 
 """
