@@ -9,10 +9,16 @@ Mainly post-processing functions
 
 Packages:
 ----------
+pre_processing: package for pre-processing sequences before using the predictor.
+
 post_processing: package for post-processing predicting result.
 
 Data:
 -----
 data: contains pre- and post-processing data
+
+Scripts:
+--------
+paths.py: script for paths definition
 
 """
