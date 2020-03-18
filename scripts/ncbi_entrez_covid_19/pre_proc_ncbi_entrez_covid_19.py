@@ -18,7 +18,7 @@ if __name__ == '__main__':
     # ----------
     # create logger file:
     # ----------
-    logger_file_name = "ncbi_entrez_covid_19"
+    logger_file_name = "ncbi_entrez_covid_19_pre_proc"
     create_logging_file(logger_file_name=logger_file_name, save_path=os.path.dirname(__file__))
     logger = logging.getLogger(__name__)
     logger.info("=================================================")
