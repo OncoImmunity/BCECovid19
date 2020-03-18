@@ -6,8 +6,6 @@ def csv_writer(csv_path: str, obj: Iterator[Dict[str, Any]], fieldnames: List[st
     """
     Saves a list of dictionaries into a csv file.
 
-    (Unittest in test folder)
-
     Args:
         fieldnames: the header names of the csv.
         csv_path: the path to csv file to save, should end with the name.csv
@@ -27,8 +25,6 @@ def csv_reader(csv_path: str, header_lines: int, header_names: List[Any] = None)
     Read a csv file into list of dictionaries.
 
     The header lines are removed form the entries of the csv.
-
-    (Unittest in test folder)
 
     Args:
         header_lines: the total lines in csv which constitute the header.
